@@ -10,7 +10,7 @@ public class Addition_Of_Two_Numbers {
 
         int sum = num1 + num2;
 
-        System.out.println("The sum is:- " + sum);
+        System.out.println("The sum of two given number is is:- " + sum);
 
     }
 }
