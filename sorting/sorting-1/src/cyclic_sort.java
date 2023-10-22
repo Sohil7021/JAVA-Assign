@@ -12,6 +12,8 @@ public class cyclic_sort {
 
 //    Range given from  [0 to n] apply Cyclic Sort -> *** Value ***
 
+//    The complexity is O(N)
+
     static void cyclic_sort(int[] arr) {
         int i  = 0;
         while (i < arr.length) {
