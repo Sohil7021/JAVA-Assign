@@ -1,4 +1,4 @@
-package geekforgeeks;
+package geekforgeeks.substring;
 
 public class Number_of_substrings_of_one_string_present_in_other {
     public static void main(String[] args) {

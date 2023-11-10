@@ -1,4 +1,4 @@
-package geekforgeeks;
+package geekforgeeks.substring;
 
 public class Find_the_count_of_palindromic_sub_string_ {
     public static void main(String[] args) {
