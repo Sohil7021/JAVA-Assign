@@ -11,7 +11,7 @@ public class Spiral_Matrix {
                 {6,7,8}
         };
 
-        List<Integer> result = spiralMatrix(matrix);
+        List<Integer> result = spiral(matrix);
         System.out.println(result);
     }
     static List<Integer> spiralMatrix(int[][] matrix) {
@@ -48,4 +48,42 @@ public class Spiral_Matrix {
 
 
     }
-}
+
+    static List<Integer> spiral(int[][] matrix) {
+        List<Integer> res = new ArrayList();
+        int top = 0;
+        int bottom = matrix.length - 1;
+        int left = 0;
+        int right = matrix[0].length - 1;
+
+        while(left <= right || top <= bottom) {
+
+            for (int i = left; i <= right; i++) {
+
+                res.add(matrix[top][i]);
+            }
+            top++;
+        }
+
+        for(int i=top;i<=bottom;i++) {
+            res.add(matrix[i][right]);
+        }
+        right--;
+
+        if(top <= bottom) {
+            for(int i = right; i>=left;i--) {
+                res.add(matrix[bottom][i]);
+            }
+            bottom --;
+        }
+
+        if(left <= right) {
+            for(int i= bottom; i>= top;i--) {
+                res.add(matrix[i][left]);
+            }
+            left++;
+        }
+        return res;
+    }
+    }
+
