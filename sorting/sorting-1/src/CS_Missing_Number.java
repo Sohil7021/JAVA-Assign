@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class CS_Missing_Number {
     public static void main(String[] args) {
-        int[] arr = {4,0,1,2};
+        int[] arr = {3,4,-1,1};
         System.out.println(missing_num(arr));
 
     }
